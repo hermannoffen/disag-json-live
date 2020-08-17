@@ -2,7 +2,7 @@
 
 uses
   Vcl.SvcMgr,
-  Main in 'Main.pas' {MainService: TService};
+  Main in 'Main.pas' {DisagJsonLiveUDPService: TService};
 
 {$R *.RES}
 
@@ -23,6 +23,6 @@ begin
   //
   if not Application.DelayInitialize or Application.Installing then
     Application.Initialize;
-  Application.CreateForm(TMainService, MainService);
+  Application.CreateForm(TDisagJsonLiveUDPService, DisagJsonLiveUDPService);
   Application.Run;
 end.
