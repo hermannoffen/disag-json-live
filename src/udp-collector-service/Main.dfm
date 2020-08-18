@@ -3,6 +3,9 @@ object DisagJsonLiveUDPService: TDisagJsonLiveUDPService
   OnCreate = ServiceCreate
   OnDestroy = ServiceDestroy
   DisplayName = 'Disag Json-Live-Service'
+  BeforeInstall = ServiceBeforeInstallOrUninstall
+  AfterInstall = ServiceAfterInstall
+  BeforeUninstall = ServiceBeforeInstallOrUninstall
   OnContinue = ServiceContinue
   Height = 150
   Width = 215
